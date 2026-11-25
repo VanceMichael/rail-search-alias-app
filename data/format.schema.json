@@ -1,0 +1,401 @@
+{
+  "type": [
+    "object"
+  ],
+  "properties": {
+    "bookings": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "booked_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "departure_date": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "link_confidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "service_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "session_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "booked_at",
+          "departure_date",
+          "id",
+          "link_confidence",
+          "service_id",
+          "session_id"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "calendar_changes": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "effective_date": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "known_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "service_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "effective_date",
+          "id",
+          "kind",
+          "known_at",
+          "service_id"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "candidates": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "mode": {
+            "type": [
+              "string"
+            ]
+          },
+          "old_name": {
+            "type": [
+              "string"
+            ]
+          },
+          "service_ids": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          },
+          "status": {
+            "type": [
+              "string"
+            ]
+          },
+          "text": {
+            "type": [
+              "string"
+            ]
+          },
+          "travel_from": {
+            "type": [
+              "string"
+            ]
+          },
+          "travel_to": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "mode",
+          "old_name",
+          "service_ids",
+          "status",
+          "text",
+          "travel_from",
+          "travel_to"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "experiments": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "booking_maturity_hours": {
+            "type": [
+              "number"
+            ]
+          },
+          "candidate_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "max_wrong_route_rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "regions": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          },
+          "session_assignment": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "booking_maturity_hours",
+          "candidate_id",
+          "id",
+          "max_wrong_route_rate",
+          "regions",
+          "session_assignment"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "names": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "from": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "string"
+            ]
+          },
+          "service_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "to": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "from",
+          "id",
+          "name",
+          "service_id",
+          "to"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "services": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "arrival_day_offset": {
+            "type": [
+              "number"
+            ]
+          },
+          "departure": {
+            "type": [
+              "string"
+            ]
+          },
+          "destination": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "origin": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "arrival_day_offset",
+          "departure",
+          "destination",
+          "id",
+          "origin"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "sessions": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "assignment": {
+            "type": [
+              "string"
+            ]
+          },
+          "began_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "clicked_service": {
+            "type": [
+              "string"
+            ]
+          },
+          "destination": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "origin": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "query": {
+            "type": [
+              "string"
+            ]
+          },
+          "travel_date": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "visitor_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "assignment",
+          "began_at",
+          "clicked_service",
+          "destination",
+          "id",
+          "origin",
+          "query",
+          "travel_date",
+          "visitor_id"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "bookings",
+    "calendar_changes",
+    "candidates",
+    "experiments",
+    "names",
+    "services",
+    "sessions"
+  ],
+  "additionalProperties": true,
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "列车换号期的搜索意图与别名投放合成资料格式"
+}

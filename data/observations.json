@@ -1,0 +1,620 @@
+{
+  "services": [
+    {
+      "id": "S1",
+      "origin": "甲站",
+      "destination": "乙站",
+      "departure": "23:30",
+      "arrival_day_offset": 1
+    },
+    {
+      "id": "S2",
+      "origin": "丙站",
+      "destination": "丁站",
+      "departure": "08:00",
+      "arrival_day_offset": 0
+    }
+  ],
+  "names": [
+    {
+      "id": "N1",
+      "service_id": "S1",
+      "name": "K101",
+      "from": "2026-10-01",
+      "to": "2026-11-24"
+    },
+    {
+      "id": "N2",
+      "service_id": "S1",
+      "name": "N101",
+      "from": "2026-11-25",
+      "to": "2026-12-31"
+    },
+    {
+      "id": "N3",
+      "service_id": "S2",
+      "name": "K101",
+      "from": "2026-11-25",
+      "to": "2026-12-31"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "Q1",
+      "visitor_id": "V1",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T09:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q2",
+      "visitor_id": "V1",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T10:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q3",
+      "visitor_id": "V2",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T11:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q4",
+      "visitor_id": "V2",
+      "query": "K101",
+      "travel_date": "2026-11-24",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T12:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    },
+    {
+      "id": "Q5",
+      "visitor_id": "V3",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": null,
+      "destination": null,
+      "began_at": "2026-11-25T13:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q6",
+      "visitor_id": "V3",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T14:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q7",
+      "visitor_id": "V4",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T15:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q8",
+      "visitor_id": "V4",
+      "query": "K101",
+      "travel_date": null,
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T16:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    },
+    {
+      "id": "Q9",
+      "visitor_id": "V5",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T17:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q10",
+      "visitor_id": "V5",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": null,
+      "destination": null,
+      "began_at": "2026-11-25T18:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q11",
+      "visitor_id": "V6",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T19:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q12",
+      "visitor_id": "V6",
+      "query": "N101",
+      "travel_date": "2026-11-24",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T08:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    },
+    {
+      "id": "Q13",
+      "visitor_id": "V7",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T09:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q14",
+      "visitor_id": "V7",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T10:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q15",
+      "visitor_id": "V8",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": null,
+      "destination": null,
+      "began_at": "2026-11-25T11:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q16",
+      "visitor_id": "V8",
+      "query": "K101",
+      "travel_date": null,
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T12:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    },
+    {
+      "id": "Q17",
+      "visitor_id": "V9",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T13:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q18",
+      "visitor_id": "V9",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T14:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q19",
+      "visitor_id": "V10",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T15:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q20",
+      "visitor_id": "V10",
+      "query": "K101",
+      "travel_date": "2026-11-24",
+      "origin": null,
+      "destination": null,
+      "began_at": "2026-11-25T16:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    },
+    {
+      "id": "Q21",
+      "visitor_id": "V11",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T17:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q22",
+      "visitor_id": "V11",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T18:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q23",
+      "visitor_id": "V12",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T19:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q24",
+      "visitor_id": "V12",
+      "query": "N101",
+      "travel_date": null,
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T08:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    },
+    {
+      "id": "Q25",
+      "visitor_id": "V13",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": null,
+      "destination": null,
+      "began_at": "2026-11-25T09:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q26",
+      "visitor_id": "V13",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T10:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q27",
+      "visitor_id": "V14",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T11:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q28",
+      "visitor_id": "V14",
+      "query": "K101",
+      "travel_date": "2026-11-24",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T12:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    },
+    {
+      "id": "Q29",
+      "visitor_id": "V15",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T13:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q30",
+      "visitor_id": "V15",
+      "query": "N101",
+      "travel_date": "2026-11-26",
+      "origin": null,
+      "destination": null,
+      "began_at": "2026-11-25T14:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q31",
+      "visitor_id": "V16",
+      "query": "K101",
+      "travel_date": "2026-11-26",
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T15:00:00+08:00",
+      "assignment": "提示",
+      "clicked_service": "S1"
+    },
+    {
+      "id": "Q32",
+      "visitor_id": "V16",
+      "query": "K101",
+      "travel_date": null,
+      "origin": "甲站",
+      "destination": "乙站",
+      "began_at": "2026-11-25T16:00:00+08:00",
+      "assignment": "原搜索",
+      "clicked_service": "S2"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "B1",
+      "session_id": "Q1",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B2",
+      "session_id": "Q2",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B4",
+      "session_id": "Q4",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B5",
+      "session_id": "Q5",
+      "service_id": "S2",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B7",
+      "session_id": "Q7",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "跨设备待核"
+    },
+    {
+      "id": "B8",
+      "session_id": "Q8",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B10",
+      "session_id": "Q10",
+      "service_id": "S2",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B11",
+      "session_id": "Q11",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B13",
+      "session_id": "Q13",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B14",
+      "session_id": "Q14",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "跨设备待核"
+    },
+    {
+      "id": "B16",
+      "session_id": "Q16",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B17",
+      "session_id": "Q17",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B19",
+      "session_id": "Q19",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B20",
+      "session_id": "Q20",
+      "service_id": "S2",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B22",
+      "session_id": "Q22",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B23",
+      "session_id": "Q23",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B25",
+      "session_id": "Q25",
+      "service_id": "S2",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B26",
+      "session_id": "Q26",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B28",
+      "session_id": "Q28",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "跨设备待核"
+    },
+    {
+      "id": "B29",
+      "session_id": "Q29",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B31",
+      "session_id": "Q31",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    },
+    {
+      "id": "B32",
+      "session_id": "Q32",
+      "service_id": "S1",
+      "departure_date": "2026-11-26",
+      "booked_at": "2026-11-26T12:00:00+08:00",
+      "link_confidence": "已确认"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "A1",
+      "text": "原K101请核对始发日期与甲乙站",
+      "old_name": "K101",
+      "service_ids": [
+        "S1"
+      ],
+      "travel_from": "2026-11-25",
+      "travel_to": "2026-12-31",
+      "mode": "提示",
+      "status": "试验中"
+    },
+    {
+      "id": "A2",
+      "text": "查询新车次",
+      "old_name": "K101",
+      "service_ids": [
+        "S2"
+      ],
+      "travel_from": "2026-11-25",
+      "travel_to": "2026-12-31",
+      "mode": "静默跳转",
+      "status": "草稿"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "X1",
+      "candidate_id": "A1",
+      "session_assignment": "会话开始固定",
+      "booking_maturity_hours": 48,
+      "regions": [
+        "甲站-乙站"
+      ],
+      "max_wrong_route_rate": 0.01
+    }
+  ],
+  "calendar_changes": [
+    {
+      "id": "CH1",
+      "service_id": "S1",
+      "effective_date": "2026-11-27",
+      "known_at": "2026-11-26T08:00:00+08:00",
+      "kind": "停开"
+    }
+  ]
+}
